@@ -47,8 +47,8 @@ for (const customer of orders) {
         console.log("=== Tìm thấy đơn hàng ===");
         console.log("ID:", customer.id);
         console.log("Amount:", customer.amount);
-        // console.log("Status:", customer.status);
-        // console.log("Customer:", customer.customer);
+        console.log("Status:", customer.status);
+        console.log("Customer:", customer.customer);
         break;
     }
 }
