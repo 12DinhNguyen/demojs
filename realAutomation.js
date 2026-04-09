@@ -18,9 +18,9 @@ class Button extends BaseElement {
     }
 }
 // câu 2
-// const btn = new Button("#submit-button");
-// btn.doubleClick();
-// btn.click();
+const btn = new Button("#submit-button");
+btn.doubleClick();
+btn.click();
 
 class InputField extends BaseElement {
     type(text) {
@@ -28,5 +28,5 @@ class InputField extends BaseElement {
     }
 }
 // câu 3
-// const input = new InputField("input[name='username']");
-// input.type("admin");
+const input = new InputField("input[name='username']");
+input.type("admin");
