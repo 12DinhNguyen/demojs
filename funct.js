@@ -26,9 +26,10 @@ const myBugs = [
     { id: 3, severity: "High" }
 ];
 
-function getHighSeverityBugs(list) {
-    return list.filter(function (bug) {
-        return bug.severity === "Low";
+function getHighSeverityBugs(bugList) {
+    return bugList.filter(function (bug) {
+        return bug.severity === "High";
+        // return 1;
     });
 }
 
