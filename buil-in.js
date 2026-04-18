@@ -16,13 +16,16 @@
 //     ];
 
 // //1 dùng filter
-// const inStockProducts = products.filter(product => product.stock > 0);
-// // console.log(inStockProducts);
+// const inStockProducts = products.filter(product => product.stock > 0).map(product => {
+//     console.log(product.name);
+//     return product.name;
+// });
+// console.log(inStockProducts);
 
-// //2 dùng map() lấy kết quả sau khi lọc
+//2 dùng map() lấy kết quả sau khi lọc
 // const productNames = inStockProducts.map(product => product.name);
 
-// //3 in ra màn hình
+//3 in ra màn hình
 // console.log(productNames);
 
 console.log("-----------------------------");
@@ -78,7 +81,17 @@ console.log("-----------------------------");
 // const hasError = formFields.some(field => !field.isValid);
 // console.log(`Có trường nào bị lỗi không? ${hasError}`);
 
+
+
+// if (formFields.every(field => field.isValid)) {
+//     console.log("Submit form");
+// } else if (formFields.some(field => !field.isValid)) {
+//     console.log("Form có lỗi, vui lòng kiểm tra lại!");
+// }
+
 console.log("-----------------------------");
+
+
 
 // //Excercise 4: Xử lý Cấu hình (Object methods & Spread Operator)
 // // Đề bài: Bạn có một file cấu hình chung (defaultConfig) và một cấu hình riêng cho môi trường Staging (stagingConfig).
