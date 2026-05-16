@@ -18,7 +18,7 @@ class Electronics extends Product {
 
     // Override (đa hình)
     getDetails() {
-        return `${this.name} - $${this.price} - Bảo hành: ${this.warranty} tháng`;
+        return `${super.getDetails()} - Bảo hành: ${this.warranty} tháng`;
     }
 }
 
@@ -31,7 +31,7 @@ class Clothing extends Product {
 
     // Override (đa hình)
     getDetails() {
-        return `${this.name} - $${this.price} - Size: ${this.size}`;
+        return `${super.getDetails()} - Size: ${this.size}`;
     }
 }
 
@@ -78,7 +78,7 @@ function processPayment(totalAmount) {
 async function runDemo() {
     try {
         const cart = new ShoppingCart();
-        
+
         // 1. Tạo sản phẩm
         const laptop = new Electronics("Macbook", 2000, 12);
         const shirt = new Clothing("T-Shirt", 20, "L");
